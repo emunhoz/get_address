@@ -16,6 +16,18 @@
     "precommit": "lint-staged",
     "storybook": "start-storybook"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/*.{d.ts}",
+      "!**/node_modules/**",
+      "!../build/**",
+      "!**/dist/**",
+      "!**/index.js",
+      "!**/styled.js",
+      "!**/stories/**"
+    ]
+  },
   "lint-staged": {
     "linters": {
       "**/*": ["prettier-standard --format 'src/**/*.js'", "git add"]
@@ -39,6 +51,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
+    "@babel/runtime-corejs2": "^7.8.4",
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-links": "^5.2.6",
     "@storybook/addons": "^5.2.6",
