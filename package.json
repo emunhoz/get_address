@@ -16,7 +16,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -32,21 +33,14 @@
   },
   "lint-staged": {
     "linters": {
-      "**/*": [
-        "prettier-standard --format 'src/**/*.js'",
-        "git add"
-      ]
+      "**/*": ["prettier-standard --format 'src/**/*.js'", "git add"]
     }
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -67,6 +61,7 @@
     "@storybook/addon-notes": "^5.3.9",
     "@storybook/addons": "^5.3.9",
     "@storybook/react": "^5.2.6",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@testing-library/jest-dom": "^5.1.0",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^8.1.0",
