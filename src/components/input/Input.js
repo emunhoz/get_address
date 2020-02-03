@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import * as S from './styled'
 
 export const Input = ({ value, placeholder, ...rest }) => (
@@ -9,3 +10,8 @@ export const Input = ({ value, placeholder, ...rest }) => (
     data-testid='input-search'
   />
 )
+
+Input.propTypes = {
+  value: PropTypes.string,
+  placeholder: PropTypes.string
+}
