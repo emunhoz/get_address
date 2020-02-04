@@ -7,7 +7,6 @@ export async function getGeoCode (cep) {
     )
     return resp
   } catch (error) {
-    console.log('deu erro')
     return error
   }
 }

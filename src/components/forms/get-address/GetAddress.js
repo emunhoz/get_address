@@ -31,5 +31,6 @@ export const GetAddress = ({ handleSubmitForm, loading }) => {
 }
 
 GetAddress.propTypes = {
-  handleSubmitForm: PropTypes.func
+  handleSubmitForm: PropTypes.func,
+  loading: PropTypes.bool
 }

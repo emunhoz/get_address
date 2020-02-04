@@ -5,7 +5,6 @@ export async function getCep (cep) {
     const resp = await viaCepApi.get(`${cep}/json/`)
     return resp
   } catch (error) {
-    console.log('deu erro')
     return error
   }
 }

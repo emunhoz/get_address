@@ -27,25 +27,31 @@ Object {
             />
           </div>
           <button
-            class="sc-AykKE ubqQq"
+            class="sc-AykKE hBlOvK"
           >
             Buscar
           </button>
         </form>
       </header>
-      <div
-        style="position: relative; height: 24em; margin: 30px;"
+      <main
+        class="sc-AykKJ Ijlwq"
       >
-        <p />
-        <p />
-        <p />
+        <div
+          class="sc-AykKK FCLqI"
+        >
+          <p
+            class="sc-fzXfLO cDaYXS"
+          />
+          <p />
+          <p />
+        </div>
         <div>
           Loading...
         </div>
-      </div>
+      </main>
     </div>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6WLiraDtwQIUCYmhgnFjAam5dI-rPVMA&callback=loaderCB01580788248019&libraries=places&v=3&language=en"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6WLiraDtwQIUCYmhgnFjAam5dI-rPVMA&callback=loaderCB01580792112367&libraries=places&v=3&language=en"
       type="text/javascript"
     />
   </body>,
@@ -72,22 +78,28 @@ Object {
           />
         </div>
         <button
-          class="sc-AykKE ubqQq"
+          class="sc-AykKE hBlOvK"
         >
           Buscar
         </button>
       </form>
     </header>
-    <div
-      style="position: relative; height: 24em; margin: 30px;"
+    <main
+      class="sc-AykKJ Ijlwq"
     >
-      <p />
-      <p />
-      <p />
+      <div
+        class="sc-AykKK FCLqI"
+      >
+        <p
+          class="sc-fzXfLO cDaYXS"
+        />
+        <p />
+        <p />
+      </div>
       <div>
         Loading...
       </div>
-    </div>
+    </main>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
