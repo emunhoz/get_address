@@ -9,4 +9,18 @@ export const Input = styled(MaskedInput)`
   font-size: 18px;
   width: 100%;
   font-weight: 200;
+  border: 1px solid transparent;
+
+  &.error {
+    background: #fff0f0;
+    border: 1px solid red;
+
+    ::placeholder {
+      color: red;
+    }
+  }
+
+  + p {
+    color: red;
+  }
 `
