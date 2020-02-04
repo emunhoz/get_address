@@ -6,6 +6,8 @@
     "google-maps-react": "^2.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hook-form": "^4.8.2",
+    "react-hook-form-input": "^1.1.10",
     "react-maskedinput": "^4.0.1",
     "react-scripts": "3.3.1",
     "styled-components": "^5.0.0"
@@ -33,14 +35,21 @@
   },
   "lint-staged": {
     "linters": {
-      "**/*": ["prettier-standard --format 'src/**/*.js'", "git add"]
+      "**/*": [
+        "prettier-standard --format 'src/**/*.js'",
+        "git add"
+      ]
     }
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
