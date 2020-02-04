@@ -18,6 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "cypress:open": "cypress open",
     "precommit": "lint-staged",
     "storybook": "start-storybook",
     "deploy-storybook": "storybook-to-ghpages"
@@ -36,21 +37,14 @@
   },
   "lint-staged": {
     "linters": {
-      "**/*": [
-        "prettier-standard --format 'src/**/*.js'",
-        "git add"
-      ]
+      "**/*": ["prettier-standard --format 'src/**/*.js'", "git add"]
     }
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -79,10 +73,11 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-inline-react-svg": "^1.1.0",
+    "cypress": "^3.8.3",
     "eslint": "^6.7.1",
     "eslint-config-prettier": "^6.7.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-cypress": "^2.7.0",
+    "eslint-plugin-cypress": "^2.8.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.1",
