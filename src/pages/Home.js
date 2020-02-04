@@ -46,7 +46,11 @@ const Home = () => {
           )}
           <p>{addressForm.cep}</p>
         </S.AddressList>
-        {error && <S.AddressStyle>Nenhum endereço encontrado!</S.AddressStyle>}
+        {error && (
+          <S.AddressStyle data-test-id='message-not-found'>
+            Nenhum endereço encontrado!
+          </S.AddressStyle>
+        )}
         {!error && <GoogleMap {...geoCode} />}
       </S.Main>
     </>

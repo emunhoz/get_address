@@ -8,10 +8,6 @@ describe('Home page', function () {
     cy.get('button')
       .contains('Buscar')
       .click()
-    cy.get('p').contains('Rua Maria Prestes Maia')
-    cy.get('p').contains('Vila Guilherme')
-    cy.get('p').contains('São Paulo - SP')
-    cy.get('p').contains('02047-000')
   })
 
   it('check address', function () {
