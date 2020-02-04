@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form'
 import { RHFInput } from 'react-hook-form-input'
 import * as S from './styled'
 
-export const GetAddress = ({ handleSubmitForm }) => {
+export const GetAddress = ({ handleSubmitForm, loading }) => {
   const { register, handleSubmit, setValue, errors } = useForm({
     mode: 'onChange'
   })
@@ -25,7 +25,7 @@ export const GetAddress = ({ handleSubmitForm }) => {
         />
         {errors.cep && <S.HelpMessage>Campo necessário</S.HelpMessage>}
       </S.InputWrapper>
-      <Button>Buscar</Button>
+      <Button>{loading ? <S.Spinner /> : 'Buscar'}</Button>
     </S.Form>
   )
 }

@@ -17,3 +17,17 @@ export const HelpMessage = styled.p`
   margin: 0;
   bottom: -25px;
 `
+
+export const Spinner = styled.div`
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  border: 2px solid rgb(95, 159, 255);
+  border-left-color: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1.2s linear infinite;
+`

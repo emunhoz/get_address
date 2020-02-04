@@ -3,34 +3,40 @@ import GlobalStle from '../styles/GlobalStyle'
 import Header from '../components/header'
 import GetAddress from '../components/forms/get-address'
 import GoogleMap from '../components/google-map/GoogleMap'
-import { viaCepApi, googleMapsApi } from '../services/api'
+import { getCep } from '../services/getCep'
+import { getGeoCode } from '../services/getGeoCode'
 import * as S from './styled'
 
 const Home = () => {
   const [addressForm, setAddressForm] = React.useState({})
   const [geoCode, setGeoCode] = React.useState({})
+  const [loading, setLoading] = React.useState(false)
+  const [error, setError] = React.useState(false)
 
   const handleSubmit = async ({ cep }) => {
-    cep = cep.replace('-', '')
-    const formattedCep = cep.slice(0, 5) + '-' + cep.slice(5, cep.length)
-
-    const viacepResponse = await viaCepApi.get(`${formattedCep}/json/`)
-    const geocodeResponse = await googleMapsApi.get(
-      `json?address=${formattedCep}&key=${process.env.REACT_APP_GOOGLE_API_KEY}`
-    )
-
-    setAddressForm(viacepResponse.data)
-    setGeoCode(geocodeResponse.data.results[0].geometry.location)
+    try {
+      setLoading(true)
+      const respViaCep = await getCep(cep)
+      const respGeoCode = await getGeoCode(cep)
+      setAddressForm(respViaCep.data)
+      setGeoCode(respGeoCode.data.results[0].geometry.location)
+      setError(false)
+      setLoading(false)
+    } catch (err) {
+      setError(true)
+      setLoading(false)
+      console.error(err)
+    }
   }
 
   return (
     <>
       <GlobalStle />
       <Header>
-        <GetAddress handleSubmitForm={handleSubmit} />
+        <GetAddress handleSubmitForm={handleSubmit} loading={loading} />
       </Header>
 
-      <div style={{ position: 'relative', height: '24em', margin: '30px' }}>
+      <S.Main>
         <S.AddressList>
           <S.AddressStyle>{addressForm.logradouro}</S.AddressStyle>
           <p>{addressForm.bairro}</p>
@@ -41,8 +47,9 @@ const Home = () => {
           )}
           <p>{addressForm.cep}</p>
         </S.AddressList>
-        <GoogleMap {...geoCode} />
-      </div>
+        {error && <S.AddressStyle>Nenhum endereço encontrado!</S.AddressStyle>}
+        {!error && <GoogleMap {...geoCode} />}
+      </S.Main>
     </>
   )
 }

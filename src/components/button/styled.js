@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-  font-family: 'Open Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   border: 0;
   cursor: pointer;
   padding: 12px;
@@ -15,6 +12,10 @@ export const Button = styled.button`
   color: white;
   border-radius: 4px;
   font-weight: bold;
+  min-width: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background-image: linear-gradient(
     to right,
