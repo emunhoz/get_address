@@ -5,9 +5,11 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <label
+        class="sc-AykKD bjlwoc"
+      />
       <input
         class="sc-AykKC kbTzwD"
-        data-testid="input-search"
         mask="11111-111"
         maxlength="9"
         placeholder="Search"
@@ -17,9 +19,11 @@ Object {
     </div>
   </body>,
   "container": <div>
+    <label
+      class="sc-AykKD bjlwoc"
+    />
     <input
       class="sc-AykKC kbTzwD"
-      data-testid="input-search"
       mask="11111-111"
       maxlength="9"
       placeholder="Search"

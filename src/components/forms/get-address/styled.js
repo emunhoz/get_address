@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Form = styled.form`
   width: 100%;
   display: flex;
+  align-items: flex-end;
 `
 
 export const InputWrapper = styled.div`
@@ -10,12 +11,14 @@ export const InputWrapper = styled.div`
   width: 100%;
   margin-right: 20px;
   position: relative;
+  flex-flow: wrap;
 `
 
 export const HelpMessage = styled.p`
   position: absolute;
   margin: 0;
-  bottom: -25px;
+  bottom: -16px;
+  font-size: 12px;
 `
 
 export const Spinner = styled.div`

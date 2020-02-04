@@ -6,14 +6,18 @@ Object {
   "baseElement": <body>
     <div>
       <form
-        class="sc-AykKE diVPYj"
+        class="sc-AykKF emKgNc"
       >
         <div
-          class="sc-AykKF boDatO"
+          class="sc-AykKG hzBPfE"
         >
+          <label
+            class="sc-AykKD bjlwoc"
+          >
+            CEP
+          </label>
           <input
             class="sc-AykKC kbTzwD"
-            data-testid="input-search"
             id="cep"
             mask="11111-111"
             maxlength="9"
@@ -24,7 +28,7 @@ Object {
           />
         </div>
         <button
-          class="sc-AykKD kFlWLJ"
+          class="sc-AykKE bbmzGq"
         >
           Buscar
         </button>
@@ -33,14 +37,18 @@ Object {
   </body>,
   "container": <div>
     <form
-      class="sc-AykKE diVPYj"
+      class="sc-AykKF emKgNc"
     >
       <div
-        class="sc-AykKF boDatO"
+        class="sc-AykKG hzBPfE"
       >
+        <label
+          class="sc-AykKD bjlwoc"
+        >
+          CEP
+        </label>
         <input
           class="sc-AykKC kbTzwD"
-          data-testid="input-search"
           id="cep"
           mask="11111-111"
           maxlength="9"
@@ -51,7 +59,7 @@ Object {
         />
       </div>
       <button
-        class="sc-AykKD kFlWLJ"
+        class="sc-AykKE bbmzGq"
       >
         Buscar
       </button>

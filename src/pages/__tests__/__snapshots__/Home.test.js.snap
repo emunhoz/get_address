@@ -9,14 +9,18 @@ Object {
         class="sc-AykKC bVuHWI"
       >
         <form
-          class="sc-AykKF wCUMQ"
+          class="sc-AykKG cAFXjl"
         >
           <div
-            class="sc-AykKG fEfnIn"
+            class="sc-AykKH LDrRh"
           >
+            <label
+              class="sc-AykKE bqrrJp"
+            >
+              CEP
+            </label>
             <input
               class="sc-AykKD iRUOHY"
-              data-testid="input-search"
               id="cep"
               mask="11111-111"
               maxlength="9"
@@ -27,20 +31,20 @@ Object {
             />
           </div>
           <button
-            class="sc-AykKE hBlOvK"
+            class="sc-AykKF dGtDqr"
           >
             Buscar
           </button>
         </form>
       </header>
       <main
-        class="sc-AykKJ Ijlwq"
+        class="sc-AykKK fevYpT"
       >
         <div
-          class="sc-AykKK FCLqI"
+          class="sc-fzXfLO fFNZBe"
         >
           <p
-            class="sc-fzXfLO cDaYXS"
+            class="sc-fzXfLP kCBQlL"
           />
           <p />
           <p />
@@ -51,7 +55,7 @@ Object {
       </main>
     </div>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6WLiraDtwQIUCYmhgnFjAam5dI-rPVMA&callback=loaderCB01580792112367&libraries=places&v=3&language=en"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6WLiraDtwQIUCYmhgnFjAam5dI-rPVMA&callback=loaderCB01580793761328&libraries=places&v=3&language=en"
       type="text/javascript"
     />
   </body>,
@@ -60,14 +64,18 @@ Object {
       class="sc-AykKC bVuHWI"
     >
       <form
-        class="sc-AykKF wCUMQ"
+        class="sc-AykKG cAFXjl"
       >
         <div
-          class="sc-AykKG fEfnIn"
+          class="sc-AykKH LDrRh"
         >
+          <label
+            class="sc-AykKE bqrrJp"
+          >
+            CEP
+          </label>
           <input
             class="sc-AykKD iRUOHY"
-            data-testid="input-search"
             id="cep"
             mask="11111-111"
             maxlength="9"
@@ -78,20 +86,20 @@ Object {
           />
         </div>
         <button
-          class="sc-AykKE hBlOvK"
+          class="sc-AykKF dGtDqr"
         >
           Buscar
         </button>
       </form>
     </header>
     <main
-      class="sc-AykKJ Ijlwq"
+      class="sc-AykKK fevYpT"
     >
       <div
-        class="sc-AykKK FCLqI"
+        class="sc-fzXfLO fFNZBe"
       >
         <p
-          class="sc-fzXfLO cDaYXS"
+          class="sc-fzXfLP kCBQlL"
         />
         <p />
         <p />

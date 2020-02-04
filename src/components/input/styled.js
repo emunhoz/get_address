@@ -24,3 +24,8 @@ export const Input = styled(MaskedInput)`
     color: red;
   }
 `
+
+export const Label = styled.label`
+  font-size: 14px;
+  margin-bottom: 10px;
+`

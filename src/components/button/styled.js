@@ -16,6 +16,7 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 43px;
 
   background-image: linear-gradient(
     to right,

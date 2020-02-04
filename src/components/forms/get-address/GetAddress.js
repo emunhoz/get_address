@@ -15,7 +15,7 @@ export const GetAddress = ({ handleSubmitForm, loading }) => {
     <S.Form onSubmit={handleSubmit(handleSubmitForm)}>
       <S.InputWrapper>
         <RHFInput
-          as={<Input id='cep' name='cep' />}
+          as={<Input id='cep' name='cep' label='CEP' />}
           name='cep'
           mask='11111-111'
           className={errors.cep ? 'error' : null}
