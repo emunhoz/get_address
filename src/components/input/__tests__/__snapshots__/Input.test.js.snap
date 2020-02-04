@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <input
-        class="sc-AykKC duZeHK"
+        class="sc-AykKC kbTzwD"
         data-testid="input-search"
         mask="11111-111"
         maxlength="9"
@@ -18,7 +18,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-AykKC duZeHK"
+      class="sc-AykKC kbTzwD"
       data-testid="input-search"
       mask="11111-111"
       maxlength="9"

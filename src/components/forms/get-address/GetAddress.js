@@ -6,17 +6,13 @@ import { useForm } from 'react-hook-form'
 import { RHFInput } from 'react-hook-form-input'
 import * as S from './styled'
 
-export const GetAddress = () => {
+export const GetAddress = ({ handleSubmitForm }) => {
   const { register, handleSubmit, setValue, errors } = useForm({
     mode: 'onChange'
   })
 
-  const onSubmit = values => {
-    console.log(values)
-  }
-
   return (
-    <S.Form onSubmit={handleSubmit(onSubmit)}>
+    <S.Form onSubmit={handleSubmit(handleSubmitForm)}>
       <S.InputWrapper>
         <RHFInput
           as={<Input id='cep' name='cep' />}
@@ -35,6 +31,5 @@ export const GetAddress = () => {
 }
 
 GetAddress.propTypes = {
-  value: PropTypes.string,
-  placeholder: PropTypes.string
+  handleSubmitForm: PropTypes.func
 }
